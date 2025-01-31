@@ -1,0 +1,19 @@
+###
+#
+# ピザ一覧の参照
+#
+GET http://localhost:4004/odata/v4/pizzashop/Pizzas
+
+###
+#
+# オーダー一覧の参照
+#
+GET http://localhost:4004/odata/v4/pizzashop/Orders
+
+###
+#
+# ピザを注文
+#
+POST http://localhost:4004/odata/v4/pizzashop/Orders
+Content-Type: application/json
+{"pizza_ID": 2, "quantity": 2}

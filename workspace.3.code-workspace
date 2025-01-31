@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "path": "my-pizzashop"
+        },
+        {
+            "name": "my-bookshop",
+            "path": "my-bookshop"
+        }
+    ],
+    "settings": {
+        "SAP HANA Project Explorer.bind.confirm existing service": false,
+        "SAP HANA Project Explorer.bind.confirm automatic undeployment": false
+    }
+}
