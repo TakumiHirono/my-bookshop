@@ -1,0 +1,15 @@
+@authUrl=https://d0aed2e5trial.authentication.us10.hana.ondemand.com
+
+@clientid=sb-external-service-node-d0aed2e5trial-dev!t386721
+
+@clientsecret=a0954d0d-f152-496e-8688-1c6e56ae35db$16t_JXl60ErY9gA-yJKl-LspI-hJ-z8N5dinj3wdEaA=
+
+@server=d0aed2e5trial-dev-external-service-node-srv.cfapps.us10-001.hana.ondemand.com
+
+### Get Token
+# @name client_credentials_grant
+POST {{authUrl}}/odata/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id={{clientid}}&client_secret={{clientsecret}}
+

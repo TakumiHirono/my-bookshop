@@ -1,0 +1,30 @@
+@server=http://localhost:4004
+
+GET {{server}}/odata/v4/books/Books
+
+### Actions
+POST {{server}}/odata/v4/books/createBook
+Content-Type: application/json
+
+{
+    "book":{
+        "ID": 20,
+        "title": "Created via action",
+        "stock": 5
+    }
+}
+
+### Actions
+POST {{server}}/odata/v4/books/Books(20)/BooksService.updateTitle
+Content-Type: application/json
+
+{
+    "title": "New Title"
+}
+
+### Actions
+POST {{server}}/odata/v4/books/Books(20)/BooksService.deleteBook
+Content-Type: application/json
+
+{}
+
